@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BT_Buoi7_8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col md-6">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h2 class="text-center">BÀI TẬP TỔNG HỢP BUỔI 7-8</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Mời nhập vào số nguyên:</label>
+                            <input type="text" name="" id="txtSoNguyen" class="form-control"
+                                placeholder="Nhập số nguyên ở đây">
+                            <button class="btn btn-primary my-3" id="btnThemSo">THÊM SỐ VÀO MẢNG</button>
+                            <div> <span id="mangHienTai"></span>
+                            </div>
+                            <button class="btn btn-primary my-3" id="btnTinhTongDuong">1. TÍNH TỔNG CÁC SỐ
+                                DƯƠNG</button>
+                            <button class="btn btn-primary my-3" id="btnDemSoDuong">2. ĐẾM CÓ BAO NHIÊU SỐ
+                                DƯƠNG</button>
+                            <button class="btn btn-primary my-3" id="btnTimSoNhoNhat">3. TÌM SỐ NHỎ NHẤT</button>
+                            <button class="btn btn-primary my-3" id="btnTimSoDuongNhoNhat">4. TÌM SỐ DƯƠNG NHỎ
+                                NHẤT</button>
+                            <button class="btn btn-primary my-3" id="btnTimSoChanCuoiCung">5. TÌM SỐ CHẴN CUỐI
+                                CÙNG</button>
+                            <button class="btn btn-primary my-3" id="btnDoiCho">6. ĐỔI CHỖ 2 GIÁ TRỊ TRONG MẢNG</button>
+                            <button class="btn btn-primary my-3" id="btnSapXepTang">7. SẮP XẾP MẢNG TĂNG DẦN</button>
+                            <button class="btn btn-primary my-3" id="btnSoNguyenTo">8. TÌM SỐ NGUYÊN TỐ ĐẦU
+                                TIÊN</button>
+                            <button class="btn btn-primary my-3" id="btnDemSoNguyen">9. ĐẾM SỐ NGUYÊN</button>
+                            <button class="btn btn-primary my-3" id="btnSoSanhDuongAm">10. SO SÁNH SỐ LƯỢNG SỐ DƯƠNG VÀ
+                                ÂM</button>
+                            <div id="divNhapSo" class="form-group doiChoGiaTri d-none">
+                                <label for="">Vui lòng nhập vị trí 1:</label>
+                                <input type="text" id="viTri1" class="form-control" placeholder="Nhập vị trí 1">
+                                <label for="">Vui lòng nhập vị trí 2:</label>
+                                <input type="text" id="viTri2" class="form-control" placeholder="Nhập vị trí 2">
+                                <button class="btn btn-primary my-3" id="btnDoiCho2">ĐỔI CHỖ</button>
+                            </div>
+
+                        </div>
+                        <div id="divSoThuc" class="form-group d-none">
+                            <label for="">Mời nhập vào mảng số thực:</label>
+                            <input type="text" name="" id="txtSoThuc" class="form-control"
+                                placeholder="Nhập số thực ở đây">
+                            <button class="btn btn-primary my-3" id="btnThemSoThuc">THÊM VÀO MẢNG SỐ THỰC</button>
+                            <button class="btn btn-primary my-3" id="btnDemSoNguyenTrenMangST">ĐẾM SỐ NGUYÊN TRÊN MẢNG
+                                SỐ THỰC</button>
+                            <button class="btn btn-primary my-3" id="btnDemSoNguyenTrenSauKhiNoiMang">ĐẾM SỐ NGUYÊN SAU
+                                KHI NỐI MẢNG</button>
+                            <div> <span id="mangSoThucHienTai"></span>
+                            </div>
+                        </div>
+                        <div class="card-footer ">
+                            <div><span id="spanTongDuong"></span></div>
+                            <div><span id="spanDemSoDuong"></span></div>
+                            <div><span id="spanTimSoNhoNhat"></span></div>
+                            <div><span id="spanTimSoDuongNhoNhat"></span></div>
+                            <div><span id="spanTimSoChanCuoiCung"></span></div>
+                            <div><span id="spanDoiCho"></span></div>
+                            <div><span id="spanSapXepTang"></span></div>
+                            <div><span id="spanSNTDauTien"></span></div>
+                            <div><span id="spanDemSoNguyenMangSoThuc"></span></div>
+                            <div><span id="spanDemSoNguyenSauKhiNoiMang"></span></div>
+                            <div><span id="spanSoSanhDuongAm"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="./main.js"></script>
+</body>
+
+</html>
